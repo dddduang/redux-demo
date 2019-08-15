@@ -46,7 +46,7 @@ function render(state = store.getState()) {
   $userName.innerHTML = state.user.name
 }
 render()
-console.log(store.getState())
+// console.log(store.getState())
 
 
 store.subscribe(() => {
@@ -57,7 +57,7 @@ const $userNameInput = document.getElementById('userNameInput') as HTMLInputElem
 const userNameButton = document.getElementById('userNameButton') as HTMLInputElement
 userNameButton.onclick = (() => {
   const value = $userNameInput.value
-  console.log(value)
+  // console.log(value)
   // store.dispatch({ 
   //   name: value,
   //   type: 'CHANGE_NAME'
